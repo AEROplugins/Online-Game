@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 400ms ease-in-out;
+}
+
+body {
+    background-color: #ccc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main-header {
+    background-color: white;
+    width: 70%;
+    max-width: 1000px;
+    min-width: 270px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#main-header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#link-cards-container {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#link-cards-container .link-card {
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 50%;
+    height: 230px;
+}
+
+#link-cards-container .link-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.link-card img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 80%;
+}
+
+.link-card p {
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: inline-block;
+    width: 100%;
+}
+
+.section {
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.section p {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+span.server-info {
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(0, 195, 255);
+}
+
+@media all and (max-width: 940px) {
+    #main-header {
+        background-color: white;
+        width: 50%;
+        height: auto;
+        margin: 10px auto;
+    }    
+
+    #link-cards-container {
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    #link-cards-container .link-card {
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 100%;
+        height: 230px;
+    }
+
+    .section p, span.server-info{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 741px) {
+    section {
+        display: none;
+    }
+}
+
+@media all and (max-width: 619px) {
+    
+}
+
